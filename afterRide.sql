@@ -1,0 +1,11 @@
+SELECT * from mbda.data;
+
+
+INSERT INTO mbda.DATA (NUMERO, PAIS, CORREO, NOMBRE, APELLIDO, NACIMIENTO, CATEGORIA)
+VALUES ('1053442983','Colombia', 'oscar.lasso-m@mail.escuelaing.edu.co', 'Oscar', 'Lasso', '2005-08-10', '5');
+
+COMMIT;
+
+UPDATE mbda.DATA SET APELLIDO = 'Martinez' WHERE NUMERO = '1053442983';
+DELETE FROM mbda.DATA WHERE NUMERO = '1021312556';
+
